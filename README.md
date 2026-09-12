@@ -1,4 +1,4 @@
-# Galgame 通用翻译 Skill
+# galgame通用翻译skill
 
 一个面向 Codex 的 Galgame／视觉小说翻译与校订 skill。它把正文翻译、术语统一、多路线连续性、分批自审、整线纠错和格式检查组织成可恢复、可核验的工作流。
 
