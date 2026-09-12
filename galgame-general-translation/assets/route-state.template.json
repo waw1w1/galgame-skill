@@ -1,0 +1,70 @@
+{
+  "schema_version": 3,
+  "scope_id": "",
+  "role": "translate",
+  "stage": "not_started",
+  "owner": {
+    "agent_id": null,
+    "requested": {
+      "model": null,
+      "reasoning_effort": null
+    },
+    "effective": {
+      "model": null,
+      "reasoning_effort": null,
+      "evidence": null
+    }
+  },
+  "source_manifest": {
+    "path": null,
+    "sha256": null
+  },
+  "outputs": [],
+  "glossary": {
+    "path": null,
+    "revision": null,
+    "sha256": null
+  },
+  "local_terms_path": null,
+  "checkpoint": {
+    "last_written_id": null,
+    "next_unit_id": null,
+    "pending_batch": null,
+    "saved_at": null,
+    "output_revision": null
+  },
+  "coverage": {
+    "translated_manifest": null,
+    "selfchecked_manifest": null,
+    "review_records_path": null,
+    "unverified_ranges": []
+  },
+  "continuity": {
+    "scene_id": null,
+    "perspective": null,
+    "present_characters": [],
+    "relationship_and_address_stage": null,
+    "known_information": [],
+    "unfinished_action_or_dialogue": null,
+    "source_refs": [],
+    "tail_source_translation_refs": []
+  },
+  "recovery": {
+    "status": "not_required_yet",
+    "last_trusted_checkpoint": null,
+    "boundaries": [],
+    "pending_seam_checks": []
+  },
+  "unresolved": [],
+  "review_findings_path": null,
+  "correction_log_path": null,
+  "quality_completion": {
+    "batch_selfcheck": "not_run",
+    "single_pass_error_review": "not_run",
+    "reviewed_output_revision": null,
+    "final_output_revision": null,
+    "post_review_changed_ranges": [],
+    "correction_selfchecked_manifest": null,
+    "independent_post_correction_recheck": "not_requested"
+  }
+}

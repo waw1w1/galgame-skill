@@ -1,0 +1,73 @@
+{
+  "schema_version": 2,
+  "scope_id": "",
+  "batch_id": "",
+  "status": "not_run",
+  "review_kind": "not_assigned",
+  "translator_agent_id": null,
+  "reviewer": {
+    "agent_id": null,
+    "requested": {
+      "model": null,
+      "reasoning_effort": null
+    },
+    "effective": {
+      "model": null,
+      "reasoning_effort": null,
+      "evidence": null
+    },
+    "context_isolation": "unverified",
+    "translation_chat_history_inherited": "unknown"
+  },
+  "coverage": {
+    "ordered_manifest_path": null,
+    "ordered_manifest_sha256": null,
+    "first_id": null,
+    "last_id": null,
+    "unit_count": 0,
+    "excluded_ids": [],
+    "unreviewed_ids": []
+  },
+  "basis": {
+    "source_path": null,
+    "source_slice_sha256": null,
+    "target_path": null,
+    "target_slice_sha256": null,
+    "slice_selection_recipe": null,
+    "glossary_revision": null,
+    "glossary_sha256": null,
+    "style_or_continuity_revision": null
+  },
+  "checks": {
+    "mistranslation": "not_run",
+    "omission": "not_run",
+    "subject_reference": "not_run",
+    "continuity": "not_run",
+    "recovery_seams": "not_run"
+  },
+  "findings_path": null,
+  "limitations": [],
+  "completed_at": null,
+  "review_round": 1,
+  "review_round_limit": 1,
+  "review_categories": [
+    "mistranslation",
+    "omission",
+    "subject_reference",
+    "continuity"
+  ],
+  "reported_issue_count": 0,
+  "correction_handling": {
+    "owner": "original_translator",
+    "log_path": null,
+    "allowed_statuses": [
+      "open",
+      "fixed_selfchecked",
+      "dismissed_with_evidence",
+      "unresolved"
+    ],
+    "post_correction_check": "translator_local_selfcheck",
+    "automatic_reviewer_recheck": false
+  },
+  "report_is_immutable_reviewed_revision_record": true
+}

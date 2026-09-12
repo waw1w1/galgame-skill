@@ -1,0 +1,108 @@
+{
+  "schema_version": 4,
+  "work_title": "",
+  "source_language": "",
+  "target_language": "zh-CN",
+  "scope": "",
+  "stage": "inventory",
+  "subagents_requested": false,
+  "source_roots": [],
+  "output_root": "",
+  "source_manifest_path": null,
+  "unit_ownership_manifest_path": null,
+  "master_runtime": {
+    "model": null,
+    "reasoning_effort": null,
+    "evidence": null
+  },
+  "translation_baseline": {
+    "model": null,
+    "reasoning_effort": null
+  },
+  "scan_policy": "cheapest_verified_available_model_at_its_highest_supported_effort_else_master_pair",
+  "glossary": {
+    "current": ".galgame/glossary.jsonl",
+    "revision": 0,
+    "snapshot": null,
+    "sha256": null
+  },
+  "common": {
+    "source_units": [],
+    "outputs": [],
+    "status": "not_started"
+  },
+  "routes": [],
+  "true_endings": [],
+  "deferred": [],
+  "unresolved": [],
+  "checks": {
+    "batch_selfcheck": "not_run",
+    "single_pass_error_review": "not_run",
+    "translator_correction_selfcheck": "not_run",
+    "terminology": "not_run",
+    "structure": "not_run",
+    "engine_runtime": "not_run"
+  },
+  "quality_policy": {
+    "translator_selfcheck": "all_new_units_after_each_scene_or_reasonable_batch",
+    "review_coverage": "full_scope_source_and_target",
+    "review_categories": [
+      "mistranslation",
+      "omission",
+      "subject_reference",
+      "continuity"
+    ],
+    "review_rounds_per_completed_scope": 1,
+    "reviewer_selection": "fresh_context_agent_when_review_authorized_else_same_agent_separate_pass",
+    "reviewer_context": "no_translation_chat_history_read_required_source_and_target",
+    "review_model": "reviewed_scope_translator_model_and_effort_unless_user_overrides",
+    "reviewer_scope": "one_route_only",
+    "correction_owner": "original_translator",
+    "post_correction_check": "translator_local_selfcheck",
+    "automatic_reviewer_recheck": false,
+    "separate_full_style_review": false,
+    "master_extra_full_text_review": false,
+    "additional_independent_review": "only_when_explicitly_requested_by_user",
+    "missing_coverage": "complete_only_previously_unreviewed_ranges",
+    "reviewed_revision_preserved": true,
+    "recovery_gate_required": true,
+    "block_on_unresolved_substantive_errors": true
+  },
+  "reviews_root": ".galgame/reviews",
+  "review_subagents_requested": null,
+  "agent_scheduling": {
+    "policy": "one_open_child_per_scope",
+    "max_open_children_per_scope": 1,
+    "coordinator": "master_only",
+    "applies_to": [
+      "scan",
+      "translate",
+      "term_revise",
+      "review",
+      "correction",
+      "true_ending"
+    ],
+    "handoff_order": [
+      "persist_outputs_and_checkpoint",
+      "close_current_child",
+      "confirm_slot_release",
+      "spawn_or_resume_next_child"
+    ],
+    "review_delivery": "complete_scope_report_before_translator_resumption",
+    "resume_translation_owner": "original_thread_first_same_config_same_scope_replacement_only_if_unavailable",
+    "waiting_counts_as_released": false,
+    "unknown_release_counts_as_occupied": true,
+    "different_scopes_may_run_in_parallel": true,
+    "at_capacity": "queue_without_spawning",
+    "auto_raise_host_limit": false,
+    "host_open_child_limit": null,
+    "host_limit_evidence": null,
+    "scope_slots": [],
+    "scope_kinds": [
+      "common",
+      "personal_route",
+      "true_ending",
+      "deferred_nonpersonal"
+    ]
+  }
+}
