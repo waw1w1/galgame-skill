@@ -84,7 +84,7 @@
     ],
     "handoff_order": [
       "persist_outputs_and_checkpoint",
-      "close_current_child",
+      "child_finishes_and_ends_itself",
       "confirm_slot_release",
       "spawn_or_resume_next_child"
     ],
@@ -93,7 +93,9 @@
     "waiting_counts_as_released": false,
     "unknown_release_counts_as_occupied": true,
     "different_scopes_may_run_in_parallel": true,
-    "at_capacity": "queue_without_spawning",
+    "at_capacity": "message_completed_children_to_end_themselves_then_check_capacity_else_wait",
+    "release_method": "confirm_child_ended_message_it_to_end_itself_if_completed_but_still_occupying_slot",
+    "specific_close_api_required": false,
     "auto_raise_host_limit": false,
     "host_open_child_limit": null,
     "host_limit_evidence": null,
